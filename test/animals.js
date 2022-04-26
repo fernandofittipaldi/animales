@@ -62,7 +62,7 @@ describe('Lista de animales', () => {
   
       chai.spy.on(otros, 'filter')
   
-      const result = lista.otros()
+      lista.otros()
       expect(otros.filter).to.have.been.called()
     })
   })
